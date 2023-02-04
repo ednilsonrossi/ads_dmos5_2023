@@ -8,14 +8,17 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/edittext_value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edittext_value" />
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
 
     <Button
+        android:id="@+id/button_converter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_converter"
         android:text="Converter para Dolar" />
 
     <TextView
@@ -24,8 +27,8 @@
         android:text="Valor em dolar:" />
 
     <TextView
+        android:id="@+id/textview_value_converted"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textview_value_converted"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
