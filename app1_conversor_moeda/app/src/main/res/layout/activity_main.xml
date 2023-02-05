@@ -44,13 +44,19 @@
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Valor em dolar:" />
+        android:text="Valor convertido"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textview_value_converted"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
 </LinearLayout>
