@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">App2_ConversorTemperatura</string>
-    <string name="hint_edit_text">Temperatura em Fahrenheit</string>
+    <string name="app_name">Conversor de Temperatura</string>
+    <string name="hint_edit_text">Temperatura</string>
     <string name="btn_to_celsius">converter para celsius</string>
+    <string name="btn_to_fahrenheit">converter para fahrenheit</string>
     <string name="invalid_temp_message">Temperatura inválida</string>
 </resources>

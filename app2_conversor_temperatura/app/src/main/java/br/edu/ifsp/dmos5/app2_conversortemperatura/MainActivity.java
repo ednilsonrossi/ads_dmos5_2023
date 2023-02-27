@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import br.edu.ifsp.dmos5.app2_conversortemperatura.model.CelciusStrategy;
 import br.edu.ifsp.dmos5.app2_conversortemperatura.model.ConversorTemperatura;
 import br.edu.ifsp.dmos5.app2_conversortemperatura.model.FahrenheitStrategy;
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText inputEditText;
     private TextView outputTextView;
     private Button toCelsiusButton;
+    private Button toFahrenheitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         inputEditText = findViewById(R.id.edittext_input);
         outputTextView = findViewById(R.id.textview_output);
         toCelsiusButton = findViewById(R.id.button_to_celsius);
+        toFahrenheitButton = findViewById(R.id.button_to_fahrenheit);
         toCelsiusButton.setOnClickListener(this);
+        toFahrenheitButton.setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.button_to_celsius:
                 process(FahrenheitStrategy.getInstance());
+                break;
+
+            case R.id.button_to_fahrenheit:
+                process(CelciusStrategy.getInstance());
+                break;
         }
     }
 
