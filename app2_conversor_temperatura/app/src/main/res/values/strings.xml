@@ -4,4 +4,6 @@
     <string name="btn_to_celsius">converter para celsius</string>
     <string name="btn_to_fahrenheit">converter para fahrenheit</string>
     <string name="invalid_temp_message">Temperatura inválida</string>
+    <string name="btn_celsius_to_kelvin">Celsius para Kelvin</string>
+    <string name="btn_fahrenheit_to_kelvin">fahrenheit para Kelvin</string>
 </resources>

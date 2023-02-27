@@ -4,5 +4,5 @@ public interface ConversorTemperatura {
 
     public abstract double getConvertion(double temperature);
 
-    public abstract String getDegres();
+    public abstract String getScale();
 }

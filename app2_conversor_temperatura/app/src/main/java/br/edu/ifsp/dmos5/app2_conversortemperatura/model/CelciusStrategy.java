@@ -19,7 +19,7 @@ public class CelciusStrategy implements ConversorTemperatura{
     }
 
     @Override
-    public String getDegres() {
+    public String getScale() {
         return "ºF";
     }
 }

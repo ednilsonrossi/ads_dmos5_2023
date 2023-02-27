@@ -19,7 +19,7 @@ public class FahrenheitStrategy implements ConversorTemperatura{
     }
 
     @Override
-    public String getDegres() {
+    public String getScale() {
         return "ºC";
     }
 }
