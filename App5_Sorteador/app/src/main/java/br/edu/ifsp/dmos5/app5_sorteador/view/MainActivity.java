@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText limitEditText;
     private TextView outputTextView;
     private TextView limiteMessageTextView;
+    private TextView msgLastNumberTextView;
+    private TextView listLastNumberTextView;
 
 
     @Override
@@ -78,6 +80,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.outputTextView = findViewById(R.id.textview_output);
         this.limiteMessageTextView = findViewById(R.id.textview_limite_message);
         this.limitEditText = findViewById(R.id.edittext_limit);
+        this.msgLastNumberTextView = findViewById(R.id.textview_message_last_number);
+        this.listLastNumberTextView = findViewById(R.id.textview_list_last_number);
     }
 
     private void setClickListener() {
@@ -91,6 +95,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void executeDraw() {
         outputTextView.setText(String.format("%d", mSorteio.getNumber()));
+        msgLastNumberTextView.setVisibility(View.VISIBLE);
+        listLastNumberTextView.setText(mSorteio.getRegister());
     }
 
     /*
