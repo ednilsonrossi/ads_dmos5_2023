@@ -15,5 +15,13 @@ public class Sorteio {
     public int getNumber(){
         return mSorteioStrategy.nextNumber();
     }
+
+    public int getLowBorder(){
+        return mSorteioStrategy.getLowBorder();
+    }
+
+    public int getHighBorder(){
+        return mSorteioStrategy.getHighBorder();
+    }
 }
 

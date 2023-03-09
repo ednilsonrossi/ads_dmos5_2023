@@ -11,4 +11,8 @@ public abstract class SorteioStrategy {
     }
 
     public abstract int nextNumber();
+
+    public abstract int getLowBorder();
+
+    public abstract int getHighBorder();
 }

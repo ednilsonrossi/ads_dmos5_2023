@@ -2,7 +2,7 @@ package br.edu.ifsp.dmos5.app5_sorteador.model;
 
 public class DefaultLimit extends SorteioStrategy{
 
-    private static final int BORDER_DEFAULT = 100;
+    private static final int BORDER_DEFAULT = 1000;
     private static DefaultLimit instance;
 
 
@@ -19,5 +19,15 @@ public class DefaultLimit extends SorteioStrategy{
     @Override
     public int nextNumber() {
         return mRandom.nextInt(BORDER_DEFAULT) + 1;
+    }
+
+    @Override
+    public int getLowBorder() {
+        return 1;
+    }
+
+    @Override
+    public int getHighBorder() {
+        return BORDER_DEFAULT;
     }
 }

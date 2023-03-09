@@ -13,13 +13,14 @@ public class DefinedLimit extends SorteioStrategy{
         return mRandom.nextInt(this.mBorder) + 1;
     }
 
-    public int getBorder() {
+    @Override
+    public int getLowBorder() {
+        return 1;
+    }
+
+    @Override
+    public int getHighBorder() {
         return mBorder;
     }
-
-    public void setBorder(int mBorder) {
-        this.mBorder = mBorder;
-    }
-
 
 }

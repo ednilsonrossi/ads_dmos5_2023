@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'br.edu.ifsp.dmos5.app5_sorteador'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "br.edu.ifsp.dmos5.app5_sorteador"
         minSdk 28
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
